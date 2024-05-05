@@ -1,0 +1,3 @@
+[workspace]
+name = "rust-learning"
+members = ["prime_factorization","variables","max_sum","guess_number"]
