@@ -11,7 +11,7 @@ impl Rectangle {
     }
 }
 fn main(){
-    let a = Some(3);
+    let _a = Some(3);
     let rect = Rectangle{
         length:30,
         width:50,
