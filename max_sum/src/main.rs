@@ -1,6 +1,7 @@
 fn main() {
     let input = [1,1,23,-10,5,-50,24,-100];
     println!("{}",max_sum(&input));
+    println!("{}",max_sum_simple(&input));
 }
 fn max_sum(input :&[i32]) -> i32{
     if input.len() == 1 {
@@ -45,4 +46,19 @@ fn max_sum(input :&[i32]) -> i32{
         }
     }
 
+}
+fn max_sum_simple(input :&[i32]) -> i32 {
+    let mut sum :i32 = 0;
+    let mut max_sum:i32 = 0;
+    for i in input.iter() {
+        sum += i;
+        if sum < 0{
+            sum = 0;
+            continue;
+        }
+        if sum > max_sum {
+            max_sum =sum;
+        }
+    }
+    return max_sum;
 }
