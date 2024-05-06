@@ -1,3 +1,5 @@
 [workspace]
 name = "rust-learning"
-members = ["prime_factorization","variables","max_sum","guess_number"]
+members = ["prime_factorization","variables","max_sum","guess_number","person","match_and_if_let"]
+workspace.resolver = "2"
+workspace.edition = "2021"

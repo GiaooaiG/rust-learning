@@ -1,16 +1,24 @@
 enum Coin {
-    1(i32),
-    0,
-    -1,
+    A(i32),
+    B,
+    C,
 }
 
 impl Coin {
-    fn print(&self) -> String {
-        match self{};
+    fn print(&self) -> &str {
+        match self {
+            Coin::A(_) => "A",
+            _ => "",
+        }
     }
 }
 
 fn main() {
-    let coin= Coin：：1;
-    1
+    let coin = crate::Coin::A(11);
+    mod1::function()
+}
+mod mod1 {
+    pub fn function() {
+        println!("你好")
+    }
 }
