@@ -45,6 +45,10 @@ name = "max_sum"
 version = "0.1.0"
 
 [[package]]
+name = "minigrep"
+version = "0.1.0"
+
+[[package]]
 name = "person"
 version = "0.1.0"
 
