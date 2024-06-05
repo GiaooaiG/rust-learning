@@ -1,6 +1,6 @@
 [workspace]
 name = "rust-learning"
-members = ["creates/*"]
+members = ["crates/*"]
 resolver = "2"
 [workspace.package]
 edition = "2021"
