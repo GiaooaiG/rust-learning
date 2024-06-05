@@ -78,3 +78,17 @@ fn run(elements:Vec<Element>) -> Vec<Element> {
         }
     reverse_polish_notation
 }
+
+trait Stack<T> {
+    fn top(&self) -> &T;
+    fn push(t:T) -> ();
+
+}
+impl<T> Stack<T> for Vec<T>{
+    fn top(&self) -> &T {
+        return self.last().unwrap();
+    }
+    fn push(t:T) -> () {
+        
+    }
+}
