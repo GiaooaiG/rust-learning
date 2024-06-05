@@ -27,6 +27,7 @@ fn main() {
         _ => println!("No"),
     };
 }
+#[allow(dead_code)]
 enum Ok {
     Yes,
     No,

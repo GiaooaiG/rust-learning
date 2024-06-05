@@ -1,9 +1,10 @@
+#[allow(dead_code)]
 enum Coin {
     A(i32),
     B,
     C,
 }
-
+#[allow(dead_code)]
 impl Coin {
     fn print(&self) -> &str {
         match self {
@@ -12,7 +13,7 @@ impl Coin {
         }
     }
 }
-
+#[allow(unused_variables)]
 fn main() {
     let coin = crate::Coin::A(11);
     mod1::function()
