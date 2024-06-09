@@ -85,3 +85,8 @@ fn register(hashmap: &mut HashMap<u64, Reader>) {
     };
     add_reader(reader, hashmap)
 }
+fn print_reader(hashmap:&HashMap<u64,Reader>){
+    for (_,reader) in hashmap{
+        println!("name:{}\ttel:{}",reader.name,reader.tel_number);
+    }
+}
